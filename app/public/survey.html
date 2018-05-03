@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Friend Finder</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
+</head>
+<body class="light-blue lighten-3">
+   <nav>
+    <div class="nav-wrapper  light-blue darken-3">
+     <div class="container">
+        <a href="\" class="brand-logo"><img src="https://files.datingscout.com/files/26441/adultfriendfinder-logo.png" alt="" style="height:40px; margin-top: 10px;"></a>
+      <ul id="nav-mobile" class="right hide-on-med-and-down">
+        <li><a href="\">Home</a></li>
+        <li><a href="\survey">Survey</a></li>
+      </ul> 
+     </div>  
+    </div>
+  </nav>
+
+ <!-- Modal Structure -->
+  <div id="modal1" class="modal" style="max-height: 80%;">
+        <div class="modal-content" style="display: flex; flex-direction: column; align-items: center">
+            <h1 id="modalFriendName"></h1>
+            <img id="modalFriendImage" src="" alt="" style="width: 40%;">
+        </div>
+      </div>
+    <div class="container">
+       <div class="row">
+        <div class="col l12" style="margin-top: 2rem;">
+            <div class="card-panel grey lighten-5  hoverable">
+                
+                <div class="row">
+
+                      <div class="container">
+                           <h3 class="card-title">Survey</h3>
+                            <div class="row">   
+                               <div class="input-field col s6">
+                                  <input   type="text" name='name' id="name">
+                                  <label for="first_name">Name</label>
+                                </div>
+                           </div>
+                           <div class="row">   
+                               <div class="input-field col s6">
+                                  <input  id="photo" type="text" name='photo'>
+                                  <label for="photo">Photo Link</label>
+                                </div>
+                           </div>
+                           
+                            
+                            <div class="row">
+                           <div class="col l12">
+                                <label>You find it difficult to introduce yourself to other people.</label>
+                                  <select class="browser-default question" name="question1">
+                                    <option value="" selected>Choose your option</option>
+                                    <option value="5">Strongly Agree</option>
+                                    <option value="4">Agree</option>
+                                    <option value="3">Neither</option>
+                                    <option value="2">Disagree</option>
+                                    <option value="1">Strongly Disagree</option>
+                                  </select>   
+                           </div>
+                        </div>
+                        <div class="row">   
+                           <div class="col l12">
+                               <label>You often get so lost in thoughts that you ignore or forget your surroundings.</label>
+                                  <select class="browser-default question" name="question2">
+                                    <option value="" selected>Choose your option</option>
+                                    <option value="5">Strongly Agree</option>
+                                    <option value="4">Agree</option>
+                                    <option value="3">Neither</option>
+                                    <option value="2">Disagree</option>
+                                    <option value="1">Strongly Disagree</option>
+                                  </select>
+                           </div>
+                       </div>
+                       <div class="row">
+                           <div class="col l12">
+                                <label>You try to respond to your e-mails as soon as possible and cannot stand a messy inbox.</label>
+                                  <select class="browser-default question" name="question3">
+                                    <option value="" selected>Choose your option</option>
+                                    <option value="5">Strongly Agree</option>
+                                    <option value="4">Agree</option>
+                                    <option value="3">Neither</option>
+                                    <option value="2">Disagree</option>
+                                    <option value="1">Strongly Disagree</option>
+                                  </select>   
+                           </div>
+                        </div>
+                        <div class="row">   
+                           <div class="col l12">
+                               <label>You find it easy to stay relaxed even when there is some pressure.</label>
+                                  <select class="browser-default question" name="question4">
+                                    <option value="" selected>Choose your option</option>
+                                    <option value="5">Strongly Agree</option>
+                                    <option value="4">Agree</option>
+                                    <option value="3">Neither</option>
+                                    <option value="2">Disagree</option>
+                                    <option value="1">Strongly Disagree</option>
+                                  </select>
+                           </div>
+                       </div>
+                       <div class="row">
+                           <div class="col l12">
+                                <label>You do not usually initiate conversations.</label>
+                                  <select class="browser-default question" name="question5">
+                                    <option value="" selected>Choose your option</option>
+                                    <option value="5">Strongly Agree</option>
+                                    <option value="4">Agree</option>
+                                    <option value="3">Neither</option>
+                                    <option value="2">Disagree</option>
+                                    <option value="1">Strongly Disagree</option>
+                                  </select>   
+                           </div>
+                        </div>
+                        <div class="row">   
+                           <div class="col l12">
+                               <label>You rarely do something just out of sheer curiosity.</label>
+                                  <select class="browser-default question" name="question6">
+                                    <option value="" selected>Choose your option</option>
+                                    <option value="5">Strongly Agree</option>
+                                    <option value="4">Agree</option>
+                                    <option value="3">Neither</option>
+                                    <option value="2">Disagree</option>
+                                    <option value="1">Strongly Disagree</option>
+                                  </select>
+                           </div>
+                       </div>
+                       <div class="row">
+                           <div class="col l12">
+                                <label>You feel superior to other people.</label>
+                                  <select class="browser-default question" name="question7">
+                                    <option value="" selected>Choose your option</option>
+                                    <option value="5">Strongly Agree</option>
+                                    <option value="4">Agree</option>
+                                    <option value="3">Neither</option>
+                                    <option value="2">Disagree</option>
+                                    <option value="1">Strongly Disagree</option>
+                                  </select>   
+                           </div>
+                        </div>
+                        <div class="row">
+                           <div class="col l12">
+                               <label>You are usually highly motivated and energetic..</label>
+                                  <select class="browser-default question" name="question8">
+                                    <option value="" selected>Choose your option</option>
+                                    <option value="5">Strongly Agree</option>
+                                    <option value="4">Agree</option>
+                                    <option value="3">Neither</option>
+                                    <option value="2">Disagree</option>
+                                    <option value="1">Strongly Disagree</option>
+                                  </select>
+                           </div>
+                       </div>
+                       <div class="row">
+                           <div class="col l12">
+                                <label>Winning a debate matters less to you than making sure no one gets upset.</label>
+                                  <select class="browser-default question" name="question9">
+                                    <option value="" selected>Choose your option</option>
+                                    <option value="5">Strongly Agree</option>
+                                    <option value="4">Agree</option>
+                                    <option value="3">Neither</option>
+                                    <option value="2">Disagree</option>
+                                    <option value="1">Strongly Disagree</option>
+                                  </select>   
+                           </div>
+                        </div>
+                        <div class="row">     
+                           <div class="col l12">
+                               <label>You often feel as if you have to justify yourself to other people.</label>
+                                  <select class="browser-default question" name="question10">
+                                    <option value="" selected>Choose your option</option>
+                                    <option value="5">Strongly Agree</option>
+                                    <option value="4">Agree</option>
+                                    <option value="3">Neither</option>
+                                    <option value="2">Disagree</option>
+                                    <option value="1">Strongly Disagree</option>
+                                  </select>
+                           </div>
+                       </div>
+                       <button data-target="modal1" type="submit" class="btn modal-trigger">Find Friend</button> 
+                      </div>
+                </div>
+              
+            </div>
+        </div>
+      </div>
+   </div>
+
+
+
+
+ 
+    
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+    <script>
+        
+        document.addEventListener('DOMContentLoaded', function() {
+            var elems = document.querySelectorAll('.modal');
+            var instances = M.Modal.init(elems);
+          });
+        
+        document.querySelector('.btn').addEventListener('click', ()=>{
+            
+            let selectsArray = Array.from(document.querySelectorAll('.question'));
+            let userTotalScore = selectsArray.map((select, index)=>{
+                return parseInt(select.options[select.selectedIndex].value);
+            }).reduce((tV, cV)=>{
+                return tV + cV;
+            });
+            
+            let userInputs = {
+                name: document.querySelector('#name').value,
+                photo: document.querySelector('#photo').value,
+                score: userTotalScore
+            }
+   
+                fetch('http://localhost:3000/survey', {
+                    headers: {
+                      'Accept': 'application/json',
+                      'Content-Type': 'application/json'
+                    },
+                        method: 'POST',
+                        body: JSON.stringify(userInputs)
+                    }).then(function(response) {
+                        return response.json();
+                    }).then((data)=>{
+                        
+                        document.querySelector('#modalFriendName').innerHTML = data.name;
+                        document.querySelector('#modalFriendImage').src = data.photo;
+                        
+                         
+                    
+                    }).catch(function (error) {  
+                      console.log('Request failure: ', error);  
+                    });
+            
+        });
+    </script>
+</body>
+</html>
